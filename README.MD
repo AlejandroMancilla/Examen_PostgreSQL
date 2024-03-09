@@ -1,6 +1,6 @@
 # EXAMEN - POSTGRESQL
 ## <span style="color:red; text-decoration:underline">Creación de la BD</span>
-    ```sql
+```sql
     DROP DATABASE IF EXISTS bd_universidad;
     CREATE DATABASE bd_universidad;
     CREATE TABLE cliente (
@@ -26,8 +26,8 @@
         fecha DATE,
         id_cliente INTEGER REFERENCES cliente(id),
         id_comercial INTEGER REFERENCES comercial(id)
-    );
-    ```
+);
+```
 
 ## <span style="color:red; text-decoration:underline">Población de la BD</span>
 ```sql
@@ -67,7 +67,7 @@
     INSERT INTO pedido VALUES(14, 145.82, '2017-02-02', 6, 1);
     INSERT INTO pedido VALUES(15, 370.85, '2019-03-11', 1, 5);
     INSERT INTO pedido VALUES(16, 2389.23, '2019-03-11', 1, 5);
-    ```
+```
 ## <span style="color:red; text-decoration:underline">Consultas sobre una tabla</span>
 
 1. Devuelve un listado con todos los pedidos que se han realizado. Los pedidos deben estar ordenados por la fecha de realización, mostrando en primer lugar los pedidos más recientes.
